@@ -20,5 +20,60 @@
 ## Виконання роботи
 ### Структура проекту
 # lab1/
-# ├── main.py
+# ├── lab1.py
 # └── README.md
+
+### Опис файлів
+- **main.py**: містить реалізацію основних функцій для завдань.
+- **README.md**: файл з детальним поясненням лабораторної роботи.
+
+### Основний код програми (lab1.py)
+
+```python
+
+def task1(s):
+    return len(s)
+
+def task2(num1, operator, num2):
+    if operator == '+':
+        return num1 + num2
+    elif operator == '-':
+        return num1 - num2
+    elif operator == '*':
+        return num1 * num2
+    elif operator == '/':
+        return num1 / num2
+    elif operator == '//':
+        return num1 // num2
+    elif operator == '**':
+        return num1 ** num2
+    else:
+        return "Invalid operator"
+
+def task3(numbers):
+    if not numbers:
+        return None
+    return max(numbers)
+
+
+### Приклади використання
+# Виклик функції task1
+print(task1("hello"))  # Очікуваний результат: 5
+
+# Виклик функції task2
+print(task2(5, '+', 3))  # Очікуваний результат: 8
+print(task2(10, '/', 2))  # Очікуваний результат: 5.0
+
+# Виклик функції task3
+print(task3([1, 2, 3, 4, 5]))  # Очікуваний результат: 5
+print(task3([]))  # Очікуваний результат: None
+
+#Результати
+#Вивід програми
+5
+8
+5.0
+5
+None
+### Висновки
+##Мета роботи була досягнута. Було створено кілька функцій для роботи з рядками, математичними операціями та списками. Всі завдання були успішно виконані та протестовані.
